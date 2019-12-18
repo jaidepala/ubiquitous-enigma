@@ -18,8 +18,8 @@
     "url": "https://github.com/jaidepala/ubiquitous-enigma/issues"
   },
   "engines": {
-    "node": "12.13.0",
-    "npm": "6.13.0"
+		"node": "8.12.0",
+		"npm": "6.4.1"
   },
   "homepage": "https://github.com/jaidepala/ubiquitous-enigma#readme",
   "dependencies": {
