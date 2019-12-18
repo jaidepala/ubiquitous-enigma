@@ -72,3 +72,8 @@
 .flex-inner li {
   width: 100px;
 }
+
+.req-field {
+  color: #ff0000;
+  padding: 3px 2px;
+}

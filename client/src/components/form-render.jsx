@@ -9,7 +9,10 @@ const FormRender = (props) => {
     if (type === 'input') {
         return (
             <li>
-                <label htmlFor={uuid}>{labelText}</label>
+                <label htmlFor={uuid}>
+                    {labelText}
+                    { required ? (<span className="req-field">*</span>) : '' }
+                </label>
                 <input
                     onChange={(event) => {
                         onType(event, props);
@@ -26,7 +29,10 @@ const FormRender = (props) => {
     else if (type === 'email') {
         return (
             <li>
-                <label htmlFor={uuid}>{labelText}</label>
+                <label htmlFor={uuid}>
+                    {labelText}
+                    { required ? (<span className="req-field">*</span>) : '' }
+                </label>
                 <input
                     onChange={(event) => {
                         onType(event, props);
@@ -47,7 +53,10 @@ const FormRender = (props) => {
         */
         return (
             <li>
-                <label htmlFor={uuid}>{labelText}</label>
+                <label htmlFor={uuid}>
+                    {labelText}
+                    { required ? (<span className="req-field">*</span>) : '' }
+                </label>
                 <input
                     title="Phone number should be 10 digits and must have only numbers."
                     onChange={(event) => {
@@ -67,7 +76,10 @@ const FormRender = (props) => {
     else if (type === 'textarea') {
         return (
             <li>
-                <label htmlFor={uuid}>{labelText}</label>
+                <label htmlFor={uuid}>
+                    {labelText}
+                    { required ? (<span className="req-field">*</span>) : '' }
+                </label>
                 <textarea required={required} onChange={(event) => { onType(event, props); }} rows="6" id={uuid} placeholder={placeholderText}></textarea>
             </li>
         );
