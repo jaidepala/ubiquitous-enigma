@@ -1,7 +1,7 @@
 # ubiquitous-enigma
 - React form that persists data.
 
-- Link: https://ubiquitous-enigma.herokuapp.com/list
+- Link: https://ubiquitous-enigma.herokuapp.com
 
 - Preview	：
 
